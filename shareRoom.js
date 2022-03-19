@@ -2,13 +2,13 @@ const createCanShareRoomWith = () => {
   const checkboxes = [
     createCheckbox({
       id: 'boy',
-      name: 'boy',
+      name: 'shareRoomWith',
       value: 'boy',
       text: 'Kille',
     }),
     createCheckbox({
       id: 'girl',
-      name: 'girl',
+      name: 'shareRoomWith',
       value: 'girl',
       text: 'Tjej',
     }),

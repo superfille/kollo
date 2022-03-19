@@ -2,21 +2,21 @@ const createCanBringCheckboxes = () => {
   const checkboxes = [
     createCheckbox({
       id: 'sleepingbag',
-      name: 'sleepingbag',
+      name: 'bringWith',
       value: 'sleepingbag',
       text: 'Sovsäck',
     }),
 
     createCheckbox({
       id: 'pillow',
-      name: 'pillow',
+      name: 'bringWith',
       value: 'pillow',
       text: 'Kudde',
     }),
 
     createCheckbox({
       id: 'sleepingMat',
-      name: 'sleepingMat',
+      name: 'bringWith',
       value: 'sleepingMat',
       text: 'Liggunderlag',
     }),

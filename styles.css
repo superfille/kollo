@@ -78,7 +78,7 @@ label, p, a, h1, h2, h3, h4, h5 {
   color: green;
 }
 
-form {
+.form {
   max-width: 350px;
   margin-left: 12px;
   margin-right: 12px;
@@ -106,6 +106,14 @@ form {
 
 .form-input select {
   max-width: 100px;
+}
+
+.form-success {
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: white;
+  padding: 3px;
+  text-indent: 6px;
 }
 
 .selected-interests table {

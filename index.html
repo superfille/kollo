@@ -28,7 +28,7 @@
     <section>
       <h2>Anmäl dig till kollo</h2>
   
-      <div>
+      <div class="form">
         <form>
           <section>
             <h3>Personuppgifter</h3>
@@ -36,13 +36,13 @@
             <div class="form-input">
               <label for="name">Namn</label>
               <input id="name" name="name" type="text">
-              <p class="form-input__info"><span>&#10069;</span> Skriv ditt för- och efternamn</p>
+              <p id="nameError" class="form-input__info" style="display: none;"><span>&#10069;</span> Skriv ditt för- och efternamn</p>
             </div>
   
             <div class="form-input margin-top-normal">
               <label for="email">E-post</label>
               <input id="email" name="email" type="email">
-              <p class="form-input__info"><span>&#10069;</span> Skriv din E-post</p>
+              <p id="emailError" class="form-input__info" style="display: none;"><span>&#10069;</span> Skriv din E-post</p>
             </div>
   
             <div class="form-input margin-top-normal">
@@ -65,7 +65,7 @@
               <div>
                 <div class="form-input--inline">
                   <input id="addInterestInput" name="interest" type="text" placeholder="T.ex Idrott, Slöjd, Matlagning...">
-                  <p class="form-input__info"><span>&#10069;</span> Du måste ange minst ett intresse</p>
+                  <p id="interestError" class="form-input__info" style="display: none;"><span>&#10069;</span> Du måste ange minst ett intresse</p>
                 </div>
   
                 <button id="addInterestButton" class="icon-button icon-button--small icon-button--add" type="button">
@@ -86,13 +86,13 @@
               
               <div id="shareRoomWith">
                 <div>
-                  <input type="radio" id="sharingRoomNo" name="sharing_room" value="no" checked=true>
-                  <label for="sharing-room-no">Nej</label>
+                  <input type="radio" id="sharingRoomNo" name="wantToShareRoom" checked=true>
+                  <label for="sharingRoomNo">Nej</label>
                 </div>
 
                 <div>
-                  <input type="radio" id="sharingRoomYes" name="sharing_room" value="yes">
-                  <label for="sharing-room-yes">Ja</label>
+                  <input type="radio" id="sharingRoomYes" name="wantToShareRoom">
+                  <label for="sharingRoomYes">Ja</label>
                 </div>
               </div>
             </div>
@@ -112,6 +112,14 @@
             Skicka in anmälan
           </button>
         </form>
+
+        <section class="margin-top-normal">
+          <div id="formSuccess" class="form-success" style="display: none;">
+            <p>
+              Din anmälan har skickats in
+            </p>
+          </div>
+        </section>
       </div>
     </section>
   </main>
