@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+label, p, a, h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  margin: 0 32px 32px 32px;
+  max-width: 1200px;
+}
+
 .kollo-cards {
   display: flex;
   flex-wrap: wrap;
@@ -33,4 +47,77 @@
 .kollo-cards__card__image img {
   max-height: 200px;
   max-width: 250px;
+}
+
+@media screen and (max-width: 480px) {
+  .kollo-cards {
+    justify-content: center;
+  }
+}
+
+.margin-top-normal {
+  margin-top: 12px;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.icon-button--small {
+  font-size: 16px;
+}
+
+.icon-button--delete:hover {
+  color: red;
+}
+
+.icon-button--add:hover {
+  color: green;
+}
+
+form {
+  max-width: 350px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input--inline {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.form-input__info {
+  margin: 6px 0 0 0;
+  font-size: 0.7em;
+  color: blue;
+}
+
+.form-input label {
+  margin-bottom: 6px;
+}
+
+.form-input select {
+  max-width: 100px;
+}
+
+.selected-interests table {
+  border-spacing: 0px;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.selected-interests tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.selected-interests__td--delete {
+  text-align: right;
 }

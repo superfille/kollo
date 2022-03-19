@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="kolloActivities.json"></script>
-  <script src="script.js"></script>
+
   <title>Anmäl till kollo</title>
 </head>
 <body>
@@ -20,14 +22,106 @@
   
     <section>
       <h2>Populära aktiviteter</h2>
-      <div class="kollo-cards" id="kollo-activities"></div>
+      <div class="kollo-cards" id="kolloActivities"></div>
     </section>
   
     <section>
       <h2>Anmäl dig till kollo</h2>
   
+      <div>
+        <form>
+          <section>
+            <h3>Personuppgifter</h3>
+
+            <div class="form-input">
+              <label for="name">Namn</label>
+              <input id="name" name="name" type="text">
+              <p class="form-input__info"><span>&#10069;</span> Skriv ditt för- och efternamn</p>
+            </div>
   
+            <div class="form-input margin-top-normal">
+              <label for="email">E-post</label>
+              <input id="email" name="email" type="email">
+              <p class="form-input__info"><span>&#10069;</span> Skriv din E-post</p>
+            </div>
+  
+            <div class="form-input margin-top-normal">
+              <label for="email">Ålder</label>
+              <select id="age" name="age">
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+              </select>
+            </div>
+          </section>
+
+          <section>
+            <h3>Dina intressen</h3>
+  
+            <div>
+              <div>
+                <div class="form-input--inline">
+                  <input id="addInterestInput" name="interest" type="text" placeholder="T.ex Idrott, Slöjd, Matlagning...">
+                  <p class="form-input__info"><span>&#10069;</span> Du måste ange minst ett intresse</p>
+                </div>
+  
+                <button id="addInterestButton" class="icon-button icon-button--small icon-button--add" type="button">
+                  &#10133;
+                </button>
+              </div>
+  
+              <div id="interestsTable" class="selected-interests margin-top-normal">
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Boende</h3>
+
+            <div>
+              <h4>Kan du tänka dig att dela rum med en kompis?</h4>
+              
+              <div id="shareRoomWith">
+                <div>
+                  <input type="radio" id="sharingRoomNo" name="sharing_room" value="no" checked=true>
+                  <label for="sharing-room-no">Nej</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="sharingRoomYes" name="sharing_room" value="yes">
+                  <label for="sharing-room-yes">Ja</label>
+                </div>
+              </div>
+            </div>
+
+            <div id="canShareRoomWith" style="display: none;">
+              <h5>Jag kan tänka mig att bo ihop med en</h5>
+              <div id="canShareRoomWithCheckboxes"></div>
+            </div>
+
+            <div>
+              <h4>Jag kan ta med</h4>
+              <div id="canBringCheckboxes"></div>
+            </div>
+          </section>
+
+          <button id="submitButton" class="submit-button margin-top-normal" type="submit">
+            Skicka in anmälan
+          </button>
+        </form>
+      </div>
     </section>
   </main>
+
+  <script src="cards.js"></script>
+  <script src="createCheckbox.js"></script>
+  <script src="canBring.js"></script>
+  <script src="shareRoom.js"></script>
+  <script src="interests.js"></script>
+  <script src="form.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
