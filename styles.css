@@ -1,0 +1,36 @@
+.kollo-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kollo-cards__card {
+  max-width: 250px;
+  margin: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.kollo-cards__card__content {
+  padding: 6px;
+}
+
+.kollo-cards__card__content a:link, .kollo-cards__card__content a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.kollo-cards__card__content a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+
+.kollo-cards__card__image {
+  height: 200px;
+  width: 250px;
+}
+
+.kollo-cards__card__image img {
+  max-height: 200px;
+  max-width: 250px;
+}
