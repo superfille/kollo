@@ -46,6 +46,9 @@ const printInterests = () => {
 }
 
 document.getElementById('addInterestButton').addEventListener('click', () => {
-  addIntereset(document.getElementById('addInterestInput').value);
-  document.getElementById('addInterestInput').value = '';
+  const value = document.getElementById('addInterestInput').value;
+  if (value !== '') {
+    addIntereset(document.getElementById('addInterestInput').value);
+    document.getElementById('addInterestInput').value = '';
+  }
 });

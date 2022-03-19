@@ -108,12 +108,19 @@ label, p, a, h1, h2, h3, h4, h5 {
   max-width: 100px;
 }
 
-.form-success {
+.form-success, .form-error {
   border-radius: 3px;
-  background-color: #4caf50;
   color: white;
   padding: 3px;
   text-indent: 6px;
+}
+
+.form-success {
+  background-color: #4caf50;
+}
+
+.form-error {
+  background-color: #ff5252;
 }
 
 .selected-interests table {
