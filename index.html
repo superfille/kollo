@@ -13,7 +13,7 @@
 </head>
 <body>
   <main class="main">
-    <section>
+    <section class="main-heading">
       <h1>Kollo sommaren 2022</h1>
       <p>
         Kollo är en lägerverksamhet för barn som är mellan 10 och 15 år gamla. Läs om några av våra aktiviteter och skicka in en anmälan om du är intresserad av kollo 2022.
@@ -36,17 +36,29 @@
             <div class="form-input">
               <label for="name">Namn</label>
               <input id="name" name="name" type="text">
-              <p id="nameError" class="form-input__info" style="display: none;"><span>&#10069;</span> Skriv ditt för- och efternamn</p>
+              <p
+                id="nameError"
+                class="form-input__info"
+                style="display: none;"
+              >
+                <span>&#10069;</span> Skriv ditt för- och efternamn
+              </p>
             </div>
   
             <div class="form-input margin-top-normal">
               <label for="email">E-post</label>
               <input id="email" name="email" type="email">
-              <p id="emailError" class="form-input__info" style="display: none;"><span>&#10069;</span> Skriv din E-post</p>
+              <p
+                id="emailError"
+                class="form-input__info"
+                style="display: none;"
+              >
+                <span>&#10069;</span> Skriv din E-post
+              </p>
             </div>
   
             <div class="form-input margin-top-normal">
-              <label for="email">Ålder</label>
+              <label for="age">Ålder</label>
               <select id="age" name="age">
                 <option value="10">10</option>
                 <option value="11">11</option>
@@ -64,11 +76,26 @@
             <div>
               <div>
                 <div class="form-input--inline">
-                  <input id="addInterestInput" name="interest" type="text" placeholder="T.ex Idrott, Slöjd, Matlagning...">
-                  <p id="interestError" class="form-input__info" style="display: none;"><span>&#10069;</span> Du måste ange minst ett intresse</p>
+                  <input
+                    id="addInterestInput"
+                    name="interest"
+                    type="text"
+                    placeholder="T.ex Idrott, Slöjd, Matlagning..."
+                  >
+                  <p
+                    id="interestError"
+                    class="form-input__info"
+                    style="display: none;"
+                  >
+                    <span>&#10069;</span> Du måste ange minst ett intresse
+                  </p>
                 </div>
   
-                <button id="addInterestButton" class="icon-button icon-button--small icon-button--add" type="button">
+                <button
+                  id="addInterestButton"
+                  class="icon-button icon-button--small icon-button--add"
+                  type="button"
+                >
                   &#10133;
                 </button>
               </div>
@@ -84,8 +111,8 @@
             <div>
               <h4>Kan du tänka dig att dela rum med en kompis?</h4>
               
-              <div id="shareRoomWith">
-                <div>
+              <div id="shareRoomWith" class="inline-buttons">
+                <div class="margin-right-normal">
                   <input type="radio" id="sharingRoomNo" name="wantToShareRoom" checked=true>
                   <label for="sharingRoomNo">Nej</label>
                 </div>
@@ -99,12 +126,12 @@
 
             <div id="canShareRoomWith" style="display: none;">
               <h5>Jag kan tänka mig att bo ihop med en</h5>
-              <div id="canShareRoomWithCheckboxes"></div>
+              <div id="canShareRoomWithCheckboxes" class="inline-buttons"></div>
             </div>
 
             <div>
               <h4>Jag kan ta med</h4>
-              <div id="canBringCheckboxes"></div>
+              <div id="canBringCheckboxes" class="inline-buttons"></div>
             </div>
           </section>
 
