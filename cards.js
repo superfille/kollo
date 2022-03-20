@@ -46,6 +46,6 @@ const createCard = (obj) => {
 }
 
 const createCards = () => {
-const cards = kolloActivities.map(createCard);
-document.getElementById('kolloActivities').innerHTML = cards.join('');
+  const cards = kolloActivities.map(createCard);
+  document.getElementById('kolloActivities').innerHTML = cards.join('');
 }
