@@ -30,7 +30,7 @@ label, p, a, h1, h2, h3, h4, h5 {
 .kollo-cards__card {
   max-width: 250px;
   margin: 12px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
